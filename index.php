@@ -4,7 +4,7 @@
  *
  * @author Simon Mitchell <kartano@gmail.com>
  *
- * @version			1.0.0			Prototype.
+ * @version			1.0.0			Prototype
  */
 
 require_once('SunsetCodersClassAutoloader.php');
