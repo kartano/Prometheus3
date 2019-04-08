@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/subfolder
+RewriteRule ^(.*)$ /subfolder/$1 [NC,L]
