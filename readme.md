@@ -32,6 +32,7 @@ The framework is design to allow for:
 ```
     npm install
 ```
+5. Be sure to create a SunsetCoders\Config\Config.yaml file.  Use the sample_config.yaml as a guide.
 ## Licenses
 The third party libraries used are subject to their license terms. To see a list
  of the libraries used, refer to the composer.json, bower.json and package.json files.
