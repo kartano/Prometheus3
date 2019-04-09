@@ -8,7 +8,21 @@
  */
 namespace SunsetCoders\PageRender;
 
-class PageRender
+/**
+ * Class PageRender
+ * @package SunsetCoders\PageRender
+ */
+abstract class PageRender
 {
-	//
+	/** @var PageRenderSettings Page render settings.*/
+	private $renderSettings;
+
+	/**
+	 * PageRender constructor.
+	 * @param PageRenderSettings $settings
+	 */
+	public function __construct(PageRenderSettings $settings)
+	{
+		$this->renderSettings=$settings;
+	}
 }
