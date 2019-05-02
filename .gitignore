@@ -3,3 +3,5 @@ vendor/
 .idea/Prometheus3.iml
 .idea/workspace.xml
 .idea/php.xml
+/node_modules/
+.idea/workspace.xml

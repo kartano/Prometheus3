@@ -14,6 +14,7 @@ class SunsetCodersClassmap
 	{
 		return [
 			'SunsetCoders\DataAccess' => $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'SunsetCoders'.DIRECTORY_SEPARATOR.'DataAccess',
+            'SunsetCoders\Exception' => $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'SunsetCoders'.DIRECTORY_SEPARATOR.'Exception'
 		];
 	}
 
