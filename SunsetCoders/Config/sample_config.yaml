@@ -12,3 +12,5 @@ database:
     password: password_here
     host: host_here
     catalogue: catalogue_here
+themes:
+    jquery: smoothness

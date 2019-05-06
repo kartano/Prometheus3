@@ -32,10 +32,17 @@ The framework is design to allow for:
 ```
     npm install
 ```
-5. Be sure to create a SunsetCoders\Config\Config.yaml file.  Use the sample_config.yaml as a guide.
+5. If you are using WINDOWS, be sure to uncomment the following line from the PHP.INI file:
+
+```
+    extension=intl
+```
+
+6. Be sure to create a SunsetCoders\Config\Config.yaml file.  Use the sample_config.yaml as a guide.
 ## Licenses
 The third party libraries used are subject to their license terms. To see a list
  of the libraries used, refer to the composer.json, bower.json and package.json files.
+ 
  [1]: http://us1.php.net/downloads.php "PHP"
  [2]: https://www.mysql.com/downloads/ "MySQL"
  [3]: https://httpd.apache.org/download.cgi "Apache2"

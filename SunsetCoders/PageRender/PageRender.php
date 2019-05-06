@@ -11,6 +11,7 @@ namespace SunsetCoders\PageRender;
 
 use SunsetCoders\DataAccess;
 use SunsetCoders\Exception;
+use SunsetCoders\Config;
 
 /**
  * Class PageRender
@@ -42,9 +43,9 @@ abstract class PageRender
         $this->renderSettings = $settings;
     }
 
-    /**
-     * Render this page directly to the output buffer.
-     */
+	/**
+	 * @throws \Exception If the system failed to find the jQueryUI framework.
+	 */
     public function RenderPage(): void
     {
         if (!$this->getRenderSettings()->isStandalonePage()) {
@@ -55,6 +56,22 @@ abstract class PageRender
                 <?php
                 $this->renderHeadStart();
                 $this->renderLibraryIncludes();
+                if ($this->getRenderSettings()->isUsesJQuery()) {
+                	?>
+	                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	                <?php
+                }
+                if ($this->getRenderSettings()->isUsesJQueryUI()) {
+                    try {
+                        $jqueryUITheme=Config\Config::getSettings()['themes']['jqueryui'];
+                    } catch (\Exception $exception) {
+                        throw $exception;
+                    }
+                	?>
+	                <script src="https://code.jquery.com/ui/ 1.12.1/jquery-ui.min.js"></script>
+	                <link rel="stylesheet" href="code.jquery.com/ui/1.12.1/themes/<?= $jqueryUITheme; ?>/jquery-ui.min.css">
+	                <?php
+                }
                 if ($this->getRenderSettings()->isUsesBootstrap()) {
                     ?>
                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -62,6 +79,11 @@ abstract class PageRender
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
                     <?php
+                }
+                if ($this->isUsesAngularJS()) {
+                	?>
+	                <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+                	<?php
                 }
                 $this->renderDocumentReadyJS();
                 $this->renderJS();
@@ -195,5 +217,4 @@ abstract class PageRender
         $this->db = $db;
         return $this;
     }
-
 }
