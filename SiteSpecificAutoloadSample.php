@@ -13,7 +13,7 @@
 
 require_once('SunsetCodersClassAutoloader.php');
 
-class SiteSpecificAutoloadSample
+class SampleSiteSpecificAutoloadSample
 {
     /**
      * SiteSpecificAutoloadSample constructor.
@@ -34,7 +34,11 @@ class SiteSpecificAutoloadSample
      */
     private static function getClassMap(): array
     {
-        return [];
+        // SM:  At the very least, you should have this:
+        return [
+            'SunsetCoders\SiteSpecific\Models' => $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'SunsetCoders'.DIRECTORY_SEPARATOR.'SiteSpecific'.DIRECTORY_SEPARATOR.'Models'
+        ];
+
         /*
         return [
             'SunsetCoders\Config' => $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'SunsetCoders'.DIRECTORY_SEPARATOR.'Config',

@@ -1,0 +1,17 @@
+# An sample showing how database configurations should be arranged.
+database:
+  # Normal DB connections.  Most work within a system should use this.
+  standard:
+    user: username_here
+    password: password_here
+    host: host_here
+    catalogue: catalogue_here
+  # Root connection strings.  You should NEVER be using this for regular work.
+  root:
+    user: username_here
+    password: password_here
+    host: host_here
+    catalogue: catalogue_here
+themes:
+  # Theme to use for jQueryUI. See:  https://code.jquery.com/ui/
+  jqueryui: smoothness
