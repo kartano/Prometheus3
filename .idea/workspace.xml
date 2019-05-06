@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="356098ef-14e3-4bae-950a-d5777f59afbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SunsetCodersClassMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/SunsetCodersClassMap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" beforeDir="false" afterPath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +38,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -58,7 +49,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SunsetCodersClassMap.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="593">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="e#178#206#0#PHP" expanded="true" />
               </folding>
@@ -109,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5083">
-              <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -151,10 +151,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/SunsetCoders/Config/sample_config.yaml" />
-        <option value="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php" />
         <option value="$PROJECT_DIR$/SunsetCodersClassMap.php" />
+        <option value="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" />
       </list>
     </option>
   </component>
@@ -166,7 +166,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="557" />
     <option name="y" value="48" />
     <option name="width" value="1376" />
@@ -190,24 +190,6 @@
               <item name="Prometheus3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Prometheus3" type="462c0819:PsiDirectoryNode" />
               <item name="SunsetCoders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus3" type="462c0819:PsiDirectoryNode" />
-              <item name="SunsetCoders" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus3" type="462c0819:PsiDirectoryNode" />
-              <item name="SunsetCoders" type="462c0819:PsiDirectoryNode" />
-              <item name="DataAccess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus3" type="462c0819:PsiDirectoryNode" />
-              <item name="SunsetCoders" type="462c0819:PsiDirectoryNode" />
-              <item name="Exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prometheus3" type="b2602c69:ProjectViewProjectNode" />
@@ -261,12 +243,12 @@
       <workItem from="1554684375670" duration="12654000" />
       <workItem from="1556502492166" duration="25000" />
       <workItem from="1556747690455" duration="7654000" />
-      <workItem from="1557103403010" duration="4029000" />
+      <workItem from="1557103403010" duration="4254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24362000" />
+    <option name="totallyTimeSpent" value="24587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -309,13 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -334,16 +309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="75" lean-forward="true" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#6#146#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -393,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5083">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SunsetCodersClassAutoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -410,22 +368,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="e#178#206#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SunsetCodersClassMap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#6#166#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#6#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="e#178#206#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

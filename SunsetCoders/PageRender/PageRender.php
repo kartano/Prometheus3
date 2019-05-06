@@ -52,7 +52,9 @@ abstract class PageRender
             ?><!DOCTYPE <?= $this->getRenderSettings()->getDoctype(); ?>>
             <HTML lang="<?= $this->getRenderSettings()->getHtmlLanguage(); ?>">
             <HEAD>
-                <TITLE><?= $this->getRenderSettings()->getTitle(); ?></TITLE>
+	            <META charset="utf-8">
+	            <META name="viewport" content="width=device-width, initial-scale=1">
+	            <TITLE><?= $this->getRenderSettings()->getTitle(); ?></TITLE>
                 <?php
                 $this->renderHeadStart();
                 $this->renderLibraryIncludes();
@@ -90,8 +92,9 @@ abstract class PageRender
                 ?>
             </HEAD>
             <BODY>
-            <?php
-        }
+                <DIV class="container-fluid">
+                <?php
+        } // End if standalone
         if ($this->getRenderSettings()->isUsesHeader()) {
             ?>
             <HEADER>
@@ -119,6 +122,7 @@ abstract class PageRender
         } // End if uses FOOTER.
         if (!$this->getRenderSettings()->isStandalonePage()) {
             ?>
+                <DIV class="container-fluid">
             </BODY>
         </HTML>
         <?php
