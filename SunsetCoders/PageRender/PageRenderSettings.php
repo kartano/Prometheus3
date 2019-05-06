@@ -53,9 +53,6 @@ class PageRenderSettings
      */
     public function assertSettingsAreValid(): void
     {
-        if (!$this->isUsesJQuery() && $this->isUsesJQueryUI()) {
-            throw new Exception\PageRenderSettingsException("JQueryUI is being included, but jQuery is turned off.");
-        }
         static $validISOLanguageCodes = [
             'ab' => 'Abkhazian',
             'aa' => 'Afar',
@@ -243,8 +240,50 @@ class PageRenderSettings
             'zu' => 'Zulu'
         ];
 
-        if (!in_array($this->htmlLanguage, self::$validISOLanguageCodes)) {
-            throw new Exception\PageRenderSettingsException("{$this->htmlLanguage} is not a valid ISO 639-1 code.");
+        static $staticHTMLDocTypes = [
+            'HTML',
+            'HTML PUBLIC "-//W3C//DTD HTML 4.01//EN "http://www.w3.org/TR/html4/strict.dtd"',
+            'HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"',
+            'HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd"',
+            'math PUBLIC "-//W3C//DTD MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/mathml2.dtd"',
+            'math SYSTEM "http://www.w3.org/Math/DTD/mathml1/mathml.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd"',
+            'html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd"',
+            'svg:svg PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd"',
+            'svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"',
+            'svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"',
+            'svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd"',
+            'svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd"',
+            'html PUBLIC "-//IETF//DTD HTML 2.0//EN"',
+            'html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"',
+            'html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd"'
+        ];
+
+        // SM:  Validate page panguages and doc types.
+        if (!$this->isStandalonePage()) {
+            if ($this->getHtmlLanguage()=='') {
+                throw new Exception\PageRenderSettingsException("Your page must specify a valid ISO 639-1 code.");
+            } elseif (!in_array($this->htmlLanguage, $validISOLanguageCodes)) {
+                throw new Exception\PageRenderSettingsException("{$this->htmlLanguage} is not a valid ISO 639-1 code.");
+            }
+            if ($this->doctype=='') {
+                throw new Exception\PageRenderSettingsException("Your page must specify a valid DOCTYPE.");
+            } elseif (!in_array($this->doctype, $staticHTMLDocTypes)) {
+                throw new Exception\PageRenderSettingsException("{$this->htmlLanguage} is not a valid DOCTYPE.");
+            }
+        }
+
+        if (!$this->isUsesJQuery()) {
+            if ($this->isUsesJQueryUI()) {
+                throw new Exception\PageRenderSettingsException("JQueryUI is being included, but jQuery is turned off.");
+            } elseif ($this->isUsesAngularJS()) {
+                throw new Exception\PageRenderSettingsException("AngularJS is being included, but jQuery is turned off.");
+            }
         }
         return;
     }
