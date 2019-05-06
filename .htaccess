@@ -1,4 +1,3 @@
 RewriteEngine on
-
-RewriteCond %{REQUEST_URI} !^/subfolder
-RewriteRule ^(.*)$ /subfolder/$1 [NC,L]
+RewriteCond %{REQUEST_URI} !Public/
+RewriteRule (.*) /Public/$1 [L]

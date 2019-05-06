@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="356098ef-14e3-4bae-950a-d5777f59afbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" beforeDir="false" afterPath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="1955">
+              <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
               <folding>
                 <element signature="e#178#206#0#PHP" expanded="true" />
               </folding>
@@ -140,7 +140,6 @@
       <list>
         <option value="$PROJECT_DIR$/readm.md" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/SunsetCodersClassAutoloader.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Config/sample_config.yml" />
@@ -155,6 +154,7 @@
         <option value="$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php" />
         <option value="$PROJECT_DIR$/SunsetCodersClassMap.php" />
         <option value="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -166,7 +166,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="557" />
     <option name="y" value="48" />
     <option name="width" value="1376" />
@@ -195,7 +195,7 @@
               <item name="Prometheus3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Prometheus3" type="462c0819:PsiDirectoryNode" />
               <item name="SunsetCoders" type="462c0819:PsiDirectoryNode" />
-              <item name="PageRender" type="462c0819:PsiDirectoryNode" />
+              <item name="SiteSpecific" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,6 +216,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karta\OneDrive\Documents\github\Prometheus3\SunsetCoders" />
+      <recent name="C:\Users\karta\OneDrive\Documents\github\Prometheus3\SiteSpecific" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,12 +244,12 @@
       <workItem from="1554684375670" duration="12654000" />
       <workItem from="1556502492166" duration="25000" />
       <workItem from="1556747690455" duration="7654000" />
-      <workItem from="1557103403010" duration="4254000" />
+      <workItem from="1557103403010" duration="5134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24587000" />
+    <option name="totallyTimeSpent" value="25467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -388,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -404,11 +398,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="1955">
+          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
           <folding>
             <element signature="e#178#206#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
