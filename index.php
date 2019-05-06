@@ -17,6 +17,12 @@ foreach(SunsetCodersClassMap::getClassMap() as $namespacePrefix => $baseDir) {
 	$SunsetCodersAutoloader->register();
 }
 
+// SM:  Load in the site specific autoloader if there is one.
+$composerAutoloadFile=dirname(__FILE__).DIRECTORY_SEPARATOR.'SiteSpecificAutoload.php';
+if (file_exists($composerAutoloadFile)) {
+    require_once $composerAutoloadFile;
+}
+
 // SM:  If we find a composer autoloader, bring that in.
 $composerAutoloadFile=dirname(__FILE__).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 if (file_exists($composerAutoloadFile)) {

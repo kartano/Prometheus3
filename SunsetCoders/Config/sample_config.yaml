@@ -13,4 +13,5 @@ database:
     host: host_here
     catalogue: catalogue_here
 themes:
-    jquery: smoothness
+  # Theme to use for jQueryUI. See:  https://code.jquery.com/ui/
+  jqueryui: smoothness
