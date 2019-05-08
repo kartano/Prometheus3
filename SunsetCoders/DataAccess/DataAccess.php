@@ -95,5 +95,19 @@ class DataAccess extends \PDO
         $this->godMode = $godMode;
     }
 
-
+    /**
+     * @param string $tableName Table to check for.
+     * @return bool TRUE if the table exists, FALSE if it doesn't.
+     */
+    public function tableExists(string $tableName): bool
+    {
+        try {
+            $statement=$this->prepare("SHOW TABLES LIKE :table_name");
+            $statement->bindParam(':table_name', $tableName, self::PARAM_STR);
+            $statement->execute();
+            return $statement->rowCount()==1;
+        } catch (\PDOException $exception) {
+            throw $exception;
+        }
+    }
 }
