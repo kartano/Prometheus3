@@ -18,6 +18,7 @@ The framework is design to allow for:
 *  [Composer][5]
 *  [Bower][6]
 *  [NPM][7]
+*  [YARN][8]
 ## Setting up for development
 1. Clone the git repository into the required web directory.
 2. Install the necessary PHP libraries via Composer
@@ -32,12 +33,16 @@ The framework is design to allow for:
 ```bash
     npm install
 ```
-5. If you are using WINDOWS, be sure to uncomment the following line from the PHP.INI file:
+5. Install the necessary files via YARN.
+```bash
+    yarn install
+```
+6. If you are using WINDOWS, be sure to uncomment the following line from the PHP.INI file:
 ```bash
     extension=intl
 ```
-6. Be sure to create a SunsetCoders\SiteSpecific\Config\Config.yaml file.  Use the sample_config.yaml as a guide.
-7. Setup your own site specific autoloader class in the root directory.  Use the SampleSiteSpecificAutoload
+7. Be sure to create a SunsetCoders\SiteSpecific\Config\Config.yaml file.  Use the sample_config.yaml as a guide.
+8. Setup your own site specific autoloader class in the root directory.  Use the SampleSiteSpecificAutoload
 class as a guide.  Be sure to rename this to "SiteSpecificAutoload" class once you are ready.
 
 * All of your own classes should be contained in or within subfolders under the SunsetCoders\SiteSpecific folder, OR the \Public
@@ -84,4 +89,4 @@ The third party libraries used are subject to their license terms. To see a list
 [5]: https://getcomposer.org "Composer"
 [6]: https://bower.io "Bower"
 [7]: https://www.npmjs.com/get-npm "NPM"
-
+[8]: https://yarnpkg.com/en/docs/install#windows-stable "YARN"

@@ -48,6 +48,7 @@ abstract class PageRender
 	 */
     public function RenderPage(): void
     {
+    	// SM:  If this is NOT a standalone page (like a dialog) then we will render the entire HTML document.
         if (!$this->getRenderSettings()->isStandalonePage()) {
             ?><!DOCTYPE <?= $this->getRenderSettings()->getDoctype(); ?>>
             <HTML lang="<?= $this->getRenderSettings()->getHtmlLanguage(); ?>">

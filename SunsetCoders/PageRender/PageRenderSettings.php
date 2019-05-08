@@ -53,6 +53,7 @@ class PageRenderSettings
      */
     public function assertSettingsAreValid(): void
     {
+        // SM:  Valid HTML lang="" attributes.
         static $validISOLanguageCodes = [
             'ab' => 'Abkhazian',
             'aa' => 'Afar',
@@ -240,6 +241,7 @@ class PageRenderSettings
             'zu' => 'Zulu'
         ];
 
+        // SM:  Valid DOCGTYPE settings.
         static $staticHTMLDocTypes = [
             'HTML',
             'HTML PUBLIC "-//W3C//DTD HTML 4.01//EN "http://www.w3.org/TR/html4/strict.dtd"',

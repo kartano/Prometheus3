@@ -20,6 +20,11 @@ class DataAccess extends \PDO
 {
     private $godMode=false;
 
+    public function __constructor()
+    {
+        // SM:  Squash PDO's constructor.  We use factory methods.
+    }
+
     /**
      * Create a new instance of DataAccess with normal privileges.
      * @return DataAccess New DataAccess class with standard privileges.
@@ -89,4 +94,6 @@ class DataAccess extends \PDO
     {
         $this->godMode = $godMode;
     }
+
+
 }
