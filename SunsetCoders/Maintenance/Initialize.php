@@ -9,7 +9,7 @@
 
 use SunsetCoders\DataAccess;
 
-require_once('Commmon.php');
+require_once('Common.php');
 
 echo 'Initialization Commencing.'.PHP_EOL;
 
