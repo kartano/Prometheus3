@@ -7,8 +7,9 @@
  * @version         1.0.0           Prototype.
  */
 
-require_once('..'.DIRECTORY_SEPARATOR.'SunsetCodersClassAutoloader.php');
-require_once('..'.DIRECTORY_SEPARATOR.'SunsetCodersClassMap.php');
+// SM:  Handle SunsetCoders autoloaders.
+require_once('..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'SunsetCodersClassAutoloader.php');
+require_once('..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'SunsetCodersClassMap.php');
 foreach(SunsetCodersClassMap::getClassMap() as $namespacePrefix => $baseDir) {
     $SunsetCodersAutoloader = new SunsetCodersClassAutoloader();
     // SM:  Specify which class files we are covering.
