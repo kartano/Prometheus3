@@ -7,9 +7,23 @@ The framework is design to allow for:
 *  Secured database connection objects that abstract out hard-coded database methods from PHP.
 *  A page generation library to make the rendering of web pages cacheable and provide a single point of truth for the
    implementation of themes.
-*  To allow for the standarized handling of user logins and security.
+*  To allow for the standardized handling of user logins and security.
 *  To allow for Composer as the main PHP package manager.
 *  To employ Bootstrap 4, jQuery and  as the main UI tools jQueryUI.
+## Overall Design Goals for this Framework
+1.  The entire framework should be drop-in.  If we add features, or fix bugs, the entire framework should just drop straight into ANY existing site using it with no need for modifications.
+2.  The framework should allow modules for common website sites.  E-commerce, photo galleries etc.
+3.  The framework should allow for multiple JS frameworks including Angular (which is my personal favorite).
+4.  The framework should be completely site agnostic.  NOTHING in the code should be aimed specifically at a particular site, except for the logic within modules (such as e-commerce).
+5.  Maintenance of all sites should be done using PHP-CLI scripts - somewhat akin to Symfony 4.
+6.  All sites will have common DB tables.  Tables within the DB that are particular to modules such as e-commerce will be pre-pended with terms to help group tables within the schema.
+7.  All code will be PHP 7.2 as a minimum.
+8.  All code MUST follow the PSR standards.
+9.  I plan to use DOCKER so that developers can work with local development on sites.
+10.  I plan to use PHPDocumentor to keep technical documentation of the framework up to date at all times.  To this end, ALL CODE MUST contain PHP Doc Blocks.
+11.  Additional libraries will be brought into the framework using NPM, Bowser, and Composer.
+12.  All version control is through GIT.
+13.  Multilingual.  I'm aiming to provide language translation files to allow for different locales - in a style very similar to Symfony.
 ## Pre-requisites
 *  LAMP stack, using the [XAMPP Library][1] available online will cover all these requirements.
 *  [PHP 7.2.11 as a minimum][2]
