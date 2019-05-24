@@ -53,8 +53,9 @@ abstract class PageRender
             ?><!DOCTYPE <?= $this->getRenderSettings()->getDoctype(); ?>>
             <HTML lang="<?= $this->getRenderSettings()->getHtmlLanguage(); ?>">
             <HEAD>
-	            <META charset="utf-8">
-	            <META name="viewport" content="width=device-width, initial-scale=1">
+	            <META charset="<?=$this->getRenderSettings()->getCharset();?>">
+	            <META http-equiv="x-ua-compatible" content="ie=edge">
+	            <META name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	            <TITLE><?= $this->getRenderSettings()->getTitle(); ?></TITLE>
                 <?php
                 if ($this->getRenderSettings()->getDescription()!='') {

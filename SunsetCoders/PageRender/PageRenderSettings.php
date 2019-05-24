@@ -32,6 +32,8 @@ class PageRenderSettings
 
     /** @var string Page description (used for HTML meta tag) */
     private $description;
+    /** @var string Page charset meta tag.  Default is UTF-8 */
+    private $charset;
 
     /** @var bool TRUE if we need jQuery on this page. */
     private $usesJQuery;
@@ -50,6 +52,11 @@ class PageRenderSettings
 
     /** @var bool TRUE if the page should include the Angular JS Library. */
     private $usesAngularJS;
+
+    public function __construct()
+    {
+        $this->setCharset("utf-8");
+    }
 
     /**
      * @throws Exception\PageRenderSettingsException Thrown if a combination of settings for the page is invalid.
@@ -487,5 +494,21 @@ class PageRenderSettings
     public function setDescription(string $description): void
     {
         $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCharset(): string
+    {
+        return $this->charset;
+    }
+
+    /**
+     * @param string $charset
+     */
+    public function setCharset(string $charset): void
+    {
+        $this->charset = $charset;
     }
 }

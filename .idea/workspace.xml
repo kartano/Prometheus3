@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="356098ef-14e3-4bae-950a-d5777f59afbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" beforeDir="false" afterPath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php" afterDir="false" />
     </list>
@@ -78,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1103">
-              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+            <state relative-caret-position="274">
+              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
               <folding>
                 <element signature="e#6#140#0#PHP" expanded="true" />
                 <element signature="e#178#206#0#PHP" expanded="true" />
@@ -109,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="455" column="5" lean-forward="true" selection-start-line="455" selection-start-column="5" selection-end-line="455" selection-end-column="5" />
+            <state relative-caret-position="680">
+              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -262,12 +261,12 @@
       <workItem from="1557303124879" duration="6471000" />
       <workItem from="1558126956969" duration="158000" />
       <workItem from="1558403375281" duration="110000" />
-      <workItem from="1558637283651" duration="1067000" />
+      <workItem from="1558637283651" duration="1328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49305000" />
+    <option name="totallyTimeSpent" value="49566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -514,15 +513,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRenderSettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="455" column="5" lean-forward="true" selection-start-line="455" selection-start-column="5" selection-end-line="455" selection-end-column="5" />
+        <state relative-caret-position="680">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunsetCoders/PageRender/PageRender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1103">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        <state relative-caret-position="274">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
           <folding>
             <element signature="e#6#140#0#PHP" expanded="true" />
             <element signature="e#178#206#0#PHP" expanded="true" />
