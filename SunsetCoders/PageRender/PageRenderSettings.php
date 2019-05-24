@@ -30,6 +30,9 @@ class PageRenderSettings
     /** @var string Page title.  This has no effect for pages that are STANDALONE. */
     private $title;
 
+    /** @var string Page description (used for HTML meta tag) */
+    private $description;
+
     /** @var bool TRUE if we need jQuery on this page. */
     private $usesJQuery;
 
@@ -468,5 +471,21 @@ class PageRenderSettings
     {
         $this->usesAngularJS = $usesAngularJS;
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
     }
 }

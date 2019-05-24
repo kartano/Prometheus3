@@ -57,6 +57,11 @@ abstract class PageRender
 	            <META name="viewport" content="width=device-width, initial-scale=1">
 	            <TITLE><?= $this->getRenderSettings()->getTitle(); ?></TITLE>
                 <?php
+                if ($this->getRenderSettings()->getDescription()!='') {
+                	?>
+	                <meta name="description" content="<?=$this->getRenderSettings()->getDescription(); ?>">
+                    <?php
+                }
                 $this->renderHeadStart();
                 $this->renderLibraryIncludes();
                 if ($this->getRenderSettings()->isUsesJQuery()) {
