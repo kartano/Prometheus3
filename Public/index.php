@@ -7,8 +7,9 @@
  * @version			1.0.0			Prototype
  */
 
-require_once('SunsetCodersClassAutoloader.php');
-require_once('SunsetCodersClassMap.php');
+require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'SunsetCodersClassAutoloader.php';
+require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'SunsetCodersClassMap.php';
+
 foreach(SunsetCodersClassMap::getClassMap() as $namespacePrefix => $baseDir) {
 	$SunsetCodersAutoloader = new SunsetCodersClassAutoloader();
 	// SM:  Specify which class files we are covering.
@@ -28,7 +29,6 @@ $composerAutoloadFile=dirname(__FILE__).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_S
 if (file_exists($composerAutoloadFile)) {
 	require_once $composerAutoloadFile;
 }
-
 
 $bits = parse_url($_SERVER['REQUEST_URI']);
 $query = isset($bits['query']) ? $bits['query'] : '';
