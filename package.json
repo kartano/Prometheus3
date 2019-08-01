@@ -2,7 +2,7 @@
   "name": "prometheus3",
   "version": "1.0.0",
   "description": "Prometheus3 Website Framework",
-  "main": "index.php",
+  "main": "Public/index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
