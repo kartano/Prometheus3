@@ -9,7 +9,6 @@
  */
 
 namespace SunsetCoders\DataAccess;
-
 use SunsetCoders\Config;
 
 /**

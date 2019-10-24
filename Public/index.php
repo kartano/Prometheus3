@@ -6,9 +6,10 @@
  *
  * @version			1.0.0			Prototype
  */
+use SunsetCoders\DataAccess;
 
-require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'SunsetCodersClassAutoloader.php';
-require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'SunsetCodersClassMap.php';
+require_once dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'SunsetCodersClassAutoloader.php';
+require_once dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'SunsetCodersClassMap.php';
 
 foreach(SunsetCodersClassMap::getClassMap() as $namespacePrefix => $baseDir) {
 	$SunsetCodersAutoloader = new SunsetCodersClassAutoloader();
@@ -19,13 +20,13 @@ foreach(SunsetCodersClassMap::getClassMap() as $namespacePrefix => $baseDir) {
 }
 
 // SM:  Load in the site specific autoloader if there is one.
-$composerAutoloadFile=dirname(__FILE__).DIRECTORY_SEPARATOR.'SiteSpecificAutoload.php';
+$composerAutoloadFile=dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'SiteSpecificAutoload.php';
 if (file_exists($composerAutoloadFile)) {
     require_once $composerAutoloadFile;
 }
 
 // SM:  If we find a composer autoloader, bring that in.
-$composerAutoloadFile=dirname(__FILE__).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
+$composerAutoloadFile=dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 if (file_exists($composerAutoloadFile)) {
 	require_once $composerAutoloadFile;
 }
@@ -54,6 +55,12 @@ RewriteRule ^ index.php [QSA,L]
 $bits = parse_url($_SERVER['REQUEST_URI']);
 $query = isset($bits['query']) ? $bits['query'] : '';
 $path = $bits['path'];
+
+try {
+    $db = DataAccess\DataAccess::getConnection();
+} catch (\Exception $e) {
+    die($e);
+}
 
 // SM:  Use $pageHome at this point to switch to what part of the site is being requested.
 //      This is be either "home" if no URL was specified; or

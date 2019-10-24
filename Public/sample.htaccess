@@ -1,0 +1,3 @@
+Options -Indexes
+RewriteEngine on 
+RewriteRule \.(gif|jpg|jpeg|mov|pdf|png)$ - [F]

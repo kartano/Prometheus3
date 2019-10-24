@@ -67,8 +67,6 @@ folder.
 # Directory Structure
 
 ```text
-.htaccess                           -   Apache settings to force URL rewrites.
-index.php                           -   The access point to your website.  All autoloaders are loaded here.
 SiteSpecificAutoloadSample.php      -   A sample file showing how to build a site specific autoloader for your classes.
                                         This should be SITE AGNOSTIC.
 SunsetCodersClassAutoloader.php     -   Autoloader class to build autoloaders for SITE AGNOSTIC classes from the classmap.
@@ -83,14 +81,18 @@ SunsetCodersClassMap.php            -   Contains an array to map namespaces to s
                                         NONE of this is visible to the web.
     \Config                         -   The configuration class providing access to site specific settings is in here.
     \Core                           -   Core modules and controllers that are NOT site specific are in here.
-        \Models                     -   Generic models that will be available to ALL websites are in here.
+        \Controllers                -   Core controller classes.
+        \Models                     -   Generic models classes.
+        \Repositories               -   Generic repository classes.
     \DataAccess                     -   DB access classes and utilities reside here.
     \Exception                      -   Common exceptions to ALL sites will sit in here.
     \Maintenance                    -   CLI based scripts for site management and construction appear here.
     \PageRender                     -   Classes to control page rendering are in here.  These are SITE AGNOSTIC!!!!!!
     \SiteSpecific                   -   Any classes or resources specific to a particular site appear inside here.
-        \Config                     -   Your site specific config files (DB passwords etc etc) appear here.
-        \Models                     -   Site specific models appear in here.
+        \Config                     -   Site specific config files (DB passwords etc etc) appear here.
+        \Controllers                -   Site specific controllers for models will appear here.
+        \Models                     -   Site specific models will appear here.
+        \Repositories               -   Site specific repositories for all models will appear here.
 ```
 
 ## Licenses

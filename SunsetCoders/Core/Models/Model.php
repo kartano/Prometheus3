@@ -7,12 +7,12 @@
  * @version         1.0.0           Prototype.
  */
 
-namespace SunsetCoders\Config\Models;
+namespace SunsetCoders\Core\Models;
 use SunsetCoders\Exception;
 
 /**
  * Class Model
- * @package SunsetCoders\Config\Models
+ * @package SunsetCoders\Core\Models
  */
 abstract class Model
 {
