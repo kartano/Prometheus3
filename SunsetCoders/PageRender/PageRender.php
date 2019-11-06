@@ -4,7 +4,8 @@
  *
  * @author Simon Mitchell <kartano@gmail.com>
  *
- * @version            1.0.0            Prototype.
+ * @version             1.0.0              Prototype.
+ * @version             1.0.1              Updated the version of FontAwesome.
  */
 
 namespace SunsetCoders\PageRender;
@@ -97,7 +98,7 @@ abstract class PageRender
                 $this->renderDocumentReadyJS();
                 $this->renderJS();
                 ?>
-	            <script src="https://use.fontawesome.com/72f2b83a62.js"></script>
+	            <script src="https://kit.fontawesome.com/bd03c343fc.js" crossorigin="anonymous"></script>
             </HEAD>
             <BODY>
                 <DIV class="container-fluid">
