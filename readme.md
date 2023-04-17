@@ -1,4 +1,6 @@
 # Prometheus 3
+## Deprecation
+It is recommended you use either [Symfony](https://symfony.com/) or [Laminas](https://getlaminas.org/) as frameworks for projects.
 ## Introduction
 Prometheus 3 is a basic web framework for use in creating websites for SunsetCoders.
 It is designed to operated with a standard LAMP stack.
